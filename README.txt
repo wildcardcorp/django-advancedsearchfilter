@@ -79,3 +79,7 @@ to something like:
 where the 'fully.qualified.ModelFormName' is the fully qualified object name
 of the ModelForm class you created.
 
+
+## Other Contributors
+
+Sponsor: Wildcard Corp. (http://www.wildcardcorp.com)

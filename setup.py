@@ -10,7 +10,7 @@ requires = [
 ]
 
 setup(
-    name='advancedsearchfilter',
+    name='django-advancedsearchfilter',
     version='0.1',
     description='Advanced Search Filter for Django Contrib Admin',
     long_description=README,
