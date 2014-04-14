@@ -25,7 +25,7 @@ setup(
     ],
     author='Joel Kleier',
     author_email='joel@kleier.us',
-    url='http://github.com/zombified/advancedsearchfilter',
+    url='http://github.com/zombified/django-advancedsearchfilter',
     keywords='web django search',
     packages=find_packages(),
     license="LICENSE.txt",
