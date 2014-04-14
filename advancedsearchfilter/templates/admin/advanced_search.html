@@ -1,0 +1,9 @@
+{{avs_redirect|safe}}
+<div class='avs_toggle'><a href='javascript:void(0);'><span class='avs_toggle_action'>Show</span> Advanced Search</a></div>
+<div class='avs_content'>
+    <form method='post'>
+        {% csrf_token %}
+        {{avs_form.as_p}}
+        <input type='submit' value='Search' class='avs_submit' />
+    </form>
+</div>

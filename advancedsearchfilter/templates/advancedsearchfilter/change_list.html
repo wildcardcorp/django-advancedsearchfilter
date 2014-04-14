@@ -1,0 +1,63 @@
+{% extends "admin/change_list.html" %}
+{% load advancedsearchfilter %}
+
+{% block extrastyle %}
+{{ block.super }}
+    <style type='text/css'>
+        .avs_toggle {
+            float: right;
+            padding: 3px;
+        }
+        .avs_content {
+            clear: both;
+            display: none;
+        }
+        .avs_content form {
+            margin-bottom: 10px;
+        }
+        .avs_content form p {
+            margin: 5px
+        }
+        .avs_content ul.errorlist { display: none; }
+        .avs_content label {
+            display: inline-block;
+            width: 120px;
+            text-align: right;
+            vertical-align: middle;
+        }
+        .avs_content .helptext {
+            display: block;
+            margin: 5px 0px 15px 125px;
+        }
+        .avs_content .avs_submit {
+            margin-left: 133px;
+            margin-top: 20px;
+        }
+    </style>
+{% endblock %}
+{% block javascripts %}
+{{ block.super }}
+    <script type='text/javascript'>
+        (function(){
+            document.addEventListener("DOMContentLoaded", function(ev) {
+                var cont = document.querySelector('.avs_content');
+                cont.style.display = "none"
+                var el = document.querySelector('.avs_toggle a');
+                el.addEventListener('click', function(e){
+                    var stateel = document.querySelector('.avs_toggle .avs_toggle_action');
+                    //debugger;
+                    if(cont.style.display !== "none") {
+                        cont.style.display = "none";
+                        stateel.innerHTML = "Show";
+                    }
+                    else {
+                        cont.style.display = "block";
+                        stateel.innerHTML = "Hide";
+                    }
+                });
+            });
+        })();
+    </script>
+{% endblock %}
+
+{% block date_hierarchy %}{{ block.super }} {% advanced_search adv_search_form_class %}{% endblock %}
