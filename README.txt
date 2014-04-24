@@ -38,6 +38,9 @@ that the django.contrib.admin is installed and activated):
         # ...
     )
 
+You will also need to make sure that you have the `django.core.context_processors.request`
+context processor added to your `TEMPLATE_CONTEXT_PREPROCESSOR` setting in your
+settings.py file.
 
 Then create a `django.forms.ModelForm` that defines the form
 to be displayed for searching. If this form contains a *Meta* class with a
@@ -48,7 +51,7 @@ or `__lte` query filter on.
 After that, extend the `advancedsearchfilter/change_list.html` template in your own
 `templates/admin/change_list.html` (or equivalent):
 
-    {% extend 'advancedsearchfilter/change_list.html' %}
+    {% extends 'advancedsearchfilter/change_list.html' %}
 
 And then, add something like the following to your template:
 
