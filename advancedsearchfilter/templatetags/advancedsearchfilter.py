@@ -76,9 +76,9 @@ def advanced_search(context, searchform):
             elif fields.BooleanField == fieldtype:
                 suffix = ""
                 if value == "yes":
-                    value = "True"
+                    value = "1"
                 elif value == "no":
-                    value = "False"
+                    value = "0"
                 else:
                     value = ""
 
