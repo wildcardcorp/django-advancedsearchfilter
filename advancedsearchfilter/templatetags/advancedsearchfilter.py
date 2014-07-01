@@ -104,9 +104,9 @@ def advanced_search(context, searchform):
                 fieldname = key.split('__')[0]
                 if fieldname in form.fields:
                     if type(form.fields.get(fieldname)) == fields.BooleanField:
-                        if value == "True":
+                        if value == "1":
                             vals[fieldname] = "yes"
-                        elif value == "False":
+                        elif value == "0":
                             vals[fieldname] = "no"
                         else:
                             vals[fieldname] = "all"

@@ -11,7 +11,7 @@ requires = [
 
 setup(
     name='django-advancedsearchfilter',
-    version='0.1',
+    version='0.2.1',
     description='Advanced Search Filter for Django Contrib Admin',
     long_description=README,
     classifiers=[
