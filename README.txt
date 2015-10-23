@@ -82,7 +82,16 @@ to something like:
 where the 'fully.qualified.ModelFormName' is the fully qualified object name
 of the ModelForm class you created.
 
+Credit
+------
+For implementation, customizations or the factored manager product that centralizes factored configuration, please contact us at https://wildcardcorp.com
+info@wildcardcorp.com 
+715.869.3440
 
-## Other Contributors
 
-Sponsor: Wildcard Corp. (http://www.wildcardcorp.com)
+.. image:: https://www.wildcardcorp.com/logo.png
+   :height: 50
+   :width: 382
+   :alt: Original work by wildcardcorp.com
+   :align: right
+   
