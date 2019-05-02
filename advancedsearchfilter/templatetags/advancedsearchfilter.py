@@ -2,6 +2,7 @@ from django.forms import fields
 from django.forms import models
 from django.template import Library
 from django.utils.http import urlquote_plus
+from django_select2.fields import AutoModelSelect2Field
 import importlib
 
 
@@ -62,6 +63,8 @@ def advanced_search(context, searchform):
             suffix = "__icontains"
 
             if models.ModelChoiceField == fieldtype:
+                suffix = ""
+            elif issubclass(fieldtype, AutoModelSelect2Field):
                 suffix = ""
             elif models.ModelMultipleChoiceField == fieldtype:
                 suffix = "__in"
