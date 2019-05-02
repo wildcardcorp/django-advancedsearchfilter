@@ -83,6 +83,10 @@ def advanced_search(context, searchform):
                     value = ""
 
             key = "%s%s" % (field, suffix)
+
+            if value is None:
+                continue
+
             if value.strip() == "":
                 if key in querystr:
                     del querystr[key]
