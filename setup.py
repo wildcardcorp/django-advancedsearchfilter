@@ -12,7 +12,7 @@ requires = [
 
 setup(
     name='django-advancedsearchfilter',
-    version='0.2.1',
+    version='0.2.2.dev0',
     description='Advanced Search Filter for Django Contrib Admin',
     long_description=README,
     classifiers=[
@@ -24,8 +24,8 @@ setup(
         "Programming Language :: Python",
         "Topic :: Internet :: WWW/HTTP",
     ],
-    author='Joel Kleier',
-    author_email='joel@kleier.us',
+    author='Wildcard Corp.',
+    author_email='corporate@wildcardcorp.com',
     url='http://github.com/wildcardcorp/django-advancedsearchfilter',
     keywords='web django search',
     packages=find_packages(),

@@ -1,1 +1,13 @@
-v0.1, 2014-04-13 -- Initial Release
+Changelog for django-advancedsearchfilter
+=========================================
+
+0.2.2 (unreleased)
+------------------
+
+- merged https://github.com/wildcardcorp/django-advancedsearchfilter/pull/2 (fix bug)
+- merged https://github.com/wildcardcorp/django-advancedsearchfilter/pull/3 (support django-select2)
+
+0.1 (2014-04-13)
+----------------
+
+- initial release
