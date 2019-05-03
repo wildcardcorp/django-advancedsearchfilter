@@ -1,7 +1,7 @@
 Changelog for django-advancedsearchfilter
 =========================================
 
-0.2.3 (unreleased)
+0.2.3 (2019-05-02)
 ------------------
 
 - reverted PR #3
