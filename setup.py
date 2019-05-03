@@ -7,7 +7,6 @@ README = open(os.path.join(here, 'README.txt')).read()
 
 requires = [
     'django',
-    'django-select2',
 ]
 
 setup(
